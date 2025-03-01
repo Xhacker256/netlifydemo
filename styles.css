@@ -12,10 +12,14 @@ body {
 }
 
 header {
-    background: #000000; /* Header background color */
+    background: #000000a9; /* Header background color */
     color: #ffffff70;
     padding: 20px 0;
-    text-align: center;
+    text-align: right;
+}
+header h1{
+    text-align: start;
+    margin-left: 20px;
 }
 
 nav ul {
@@ -26,10 +30,13 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 15px;
+    justify-items: end;
+    gap: 10px;
+
 }
 
 nav ul li a {
-    color: hsla(0, 0%, 100%, 0.678);
+    color: #333;
     text-decoration: none;
     font-weight: 700;
 
@@ -39,7 +46,7 @@ nav ul li a:hover {
     text-decoration: none;
     font-weight: 700;
     transition: 0.25s ease;
-    box-shadow: 0 2px 1px #ff9a03;
+    box-shadow: 0 2px 1px #333;
 }
 
 section {
@@ -48,6 +55,12 @@ section {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 5px 10px #8d8d8c;
+}
+section p a{
+    color: #333;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
 }
 
 h1, h2 {
@@ -63,6 +76,24 @@ h2 {
     margin-bottom: 20px;
 }
 
+.send-message{
+    text-decoration: none;
+    color: #000000;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+.send-message:hover{
+    color: #fff;
+    background-color: #000;
+    box-shadow: 0px 2px 20px #333;
+    transition: 0.55s ease;
+}
+
+
 footer {
     text-align: center;
     padding: 10px 0;
@@ -72,3 +103,46 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/*
+STYLING FOR CONTACT ME PAGE
+
+*/
+
+
+
+
+/*
+styling input, textarea fields
+*/
+input{
+    margin-left: 20px;
+}
+
+textarea{
+    margin-left: 70px;
+}
+
+
+/*
+styling button in the contact me page
+*/
+.final-send-message{
+    text-decoration: none;
+    color: #000000;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+.final-send-message:hover{
+    color: #fff;
+    background-color: #000;
+    box-shadow: 0px 2px 20px #333;
+    transition: 0.55s ease;
+}
+
+
+
